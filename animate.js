@@ -3,6 +3,14 @@
 let wrapperHeight = document.getElementById("wrapper").offsetHeight;
 let blue_box = document.getElementById("box");
 let animateDirection = 0; // animation direction, Ex- 0 for animate right bottom.
+
+
+ /*
+   * The logic of the solution is: When the box touches the edge,
+   * change the box's going direction to PositionLeft. 
+   * As the function is getting called every second, the values  
+   * the 'animateDirection' value globally and check every time, if the  
+   */
 const animateBox = () => {
 
     let PositionLeft = blue_box.offsetLeft;
